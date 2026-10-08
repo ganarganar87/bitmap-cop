@@ -1,7 +1,9 @@
-# BITMAP COP 2.2 — NEON DISTRICT
+# BITMAP COP 3.0 — URBAN SIEGE
 
-Mejoras: disparos alineados con la orientación del robot/vehículo, robot 3D más detallado, drones con piezas mecánicas, azoteas y fachadas retrofuturistas, farolas y señalización.
+Rediseño artístico original retrofuturista inspirado en videojuegos de acción isométrica de la época PS1. Incluye texturas de fachadas procedimentales, señalética, edificios, vehículos, mobiliario urbano y mecha policial más elaborado.
 
-**DEMO SIN RED** genera geometría sintética. **EXPLORAR** consulta TXID reales de Bitcoin mediante Mempool.space o Blockstream; Gateway sigue pendiente de integración.
+**EXPLORAR** utiliza TXID reales mediante Mempool.space o Blockstream; **DEMO SIN RED** utiliza TXID sintéticos explícitamente marcados. Gateway sigue como adaptador pendiente de integración.
 
-Controles: WASD o flechas para moverse y girar, T para transformar, clic o Espacio para disparar hacia delante, R para reiniciar.
+Controles: WASD/flechas moverse; T transformar; Espacio/clic disparar; R reiniciar.
+
+La ilustración conceptual compartida en el chat es una referencia visual, no una captura del motor 3D.

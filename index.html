@@ -1,12 +1,24 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BITMAP COP 2.2 — Neon District</title><style>*{box-sizing:border-box}body{margin:0;background:#080e1b;color:#e8f4ff;font:14px system-ui,Arial;overflow:hidden}#hud{position:absolute;z-index:3;top:14px;left:14px;max-width:390px;background:#0a1425e8;border:1px solid #4d789a;padding:15px;border-radius:12px;box-shadow:0 8px 30px #0008}h1{font-size:22px;margin:0 0 5px;color:#69eaff;letter-spacing:2px}.muted{color:#a4b7c9;font-size:12px}input{background:#13243c;border:1px solid #5d8eae;color:white;padding:9px;border-radius:6px;width:150px}button{background:#12b7d4;color:#041321;border:0;border-radius:6px;padding:10px 12px;font-weight:800;cursor:pointer}button:hover{background:#79e6f7}#stats{margin-top:10px;line-height:1.8}#help{position:absolute;bottom:12px;left:12px;z-index:3;background:#08121ddc;padding:10px;border-radius:8px;font-size:12px}#banner{position:absolute;top:15px;right:15px;z-index:3;background:#142536dc;padding:12px;border:1px solid #3d7896;border-radius:8px;max-width:340px}#cross{position:absolute;left:50%;top:50%;color:#fff8;pointer-events:none}#touch{position:absolute;bottom:12px;right:12px;display:none;z-index:5;gap:5px}#touch button{min-width:48px;min-height:44px}canvas{display:block}@media(max-width:750px){#hud{top:5px;left:5px;padding:9px;max-width:calc(100vw - 10px)}#banner{top:170px;right:5px;font-size:11px;max-width:200px}#help{bottom:130px;max-width:240px}#touch{display:grid;grid-template-columns:repeat(3,1fr)}} </style></head><body><div id="hud"><h1>BITMAP COP <small style="font-size:10px;color:#f8c85b">BETA 2.2</small></h1><div class="muted">NEON DISTRICT · BITCOIN CITY PATROL</div><div style="margin-top:10px"><input id="block" value="800000.bitmap" aria-label="Número de bloque Bitmap"><button id="load">EXPLORAR</button></div><div style="margin-top:8px"><button id="transform" type="button">⇄ TRANSFORMAR (T)</button> <button id="demo" type="button" style="background:#ffcd73">DEMO SIN RED</button></div><div id="stats">Preparando motor…</div></div><div id="banner">Cargando…</div><div id="help">WASD / flechas: mover · Gira con WASD · Clic / Espacio: disparar hacia el frente · T: transformar · R: reiniciar misión<br>Destruye los drones rojos. En DEMO los datos son sintéticos; EXPLORAR utiliza Bitcoin real.</div><div id="touch"><span></span><button data-key="ArrowUp">▲</button><button data-action="fire">●</button><button data-key="ArrowLeft">◀</button><button data-key="ArrowDown">▼</button><button data-key="ArrowRight">▶</button><button data-action="transform">T</button></div><script type="module">
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BITMAP COP 3.0 — Urban Siege</title><style>*{box-sizing:border-box}body{margin:0;background:#080e1b;color:#e8f4ff;font:14px system-ui,Arial;overflow:hidden}#hud{position:absolute;z-index:3;top:14px;left:14px;max-width:390px;background:#0a1425e8;border:1px solid #4d789a;padding:15px;border-radius:12px;box-shadow:0 8px 30px #0008}h1{font-size:22px;margin:0 0 5px;color:#69eaff;letter-spacing:2px}.muted{color:#a4b7c9;font-size:12px}input{background:#13243c;border:1px solid #5d8eae;color:white;padding:9px;border-radius:6px;width:150px}button{background:#12b7d4;color:#041321;border:0;border-radius:6px;padding:10px 12px;font-weight:800;cursor:pointer}button:hover{background:#79e6f7}#stats{margin-top:10px;line-height:1.8}#help{position:absolute;bottom:12px;left:12px;z-index:3;background:#08121ddc;padding:10px;border-radius:8px;font-size:12px}#banner{position:absolute;top:15px;right:15px;z-index:3;background:#142536dc;padding:12px;border:1px solid #3d7896;border-radius:8px;max-width:340px}#cross{position:absolute;left:50%;top:50%;color:#fff8;pointer-events:none}#touch{position:absolute;bottom:12px;right:12px;display:none;z-index:5;gap:5px}#touch button{min-width:48px;min-height:44px}canvas{display:block}@media(max-width:750px){#hud{top:5px;left:5px;padding:9px;max-width:calc(100vw - 10px)}#banner{top:170px;right:5px;font-size:11px;max-width:200px}#help{bottom:130px;max-width:240px}#touch{display:grid;grid-template-columns:repeat(3,1fr)}} </style></head><body><div id="hud"><h1>BITMAP COP <small style="font-size:10px;color:#f8c85b">BETA 3.0</small></h1><div class="muted">URBAN SIEGE · BITCOIN CITY PATROL</div><div style="margin-top:10px"><input id="block" value="800000.bitmap" aria-label="Número de bloque Bitmap"><button id="load">EXPLORAR</button></div><div style="margin-top:8px"><button id="transform" type="button">⇄ TRANSFORMAR (T)</button> <button id="demo" type="button" style="background:#ffcd73">DEMO SIN RED</button></div><div id="stats">Preparando motor…</div></div><div id="banner">Cargando…</div><div id="help">WASD / flechas: mover · Gira con WASD · Clic / Espacio: disparar hacia el frente · T: transformar · R: reiniciar misión<br>Destruye los drones rojos. En DEMO los datos son sintéticos; EXPLORAR utiliza Bitcoin real.</div><div id="touch"><span></span><button data-key="ArrowUp">▲</button><button data-action="fire">●</button><button data-key="ArrowLeft">◀</button><button data-key="ArrowDown">▼</button><button data-key="ArrowRight">▶</button><button data-action="transform">T</button></div><script type="module">
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js';
-const $=id=>document.getElementById(id), scene=new THREE.Scene();scene.background=new THREE.Color(0x11172c);scene.fog=new THREE.FogExp2(0x11172c,.009);
-const camera=new THREE.PerspectiveCamera(53,innerWidth/innerHeight,.1,500),renderer=new THREE.WebGLRenderer({antialias:true});renderer.setSize(innerWidth,innerHeight);renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.3;document.body.appendChild(renderer.domElement);
-scene.add(new THREE.HemisphereLight(0x93b8ff,0x171025,1.55));const sun=new THREE.DirectionalLight(0xff9d6d,2.25);sun.position.set(25,50,30);scene.add(sun);
+const $=id=>document.getElementById(id), scene=new THREE.Scene();scene.background=new THREE.Color(0x101624);scene.fog=new THREE.FogExp2(0x101624,.006);
+const camera=new THREE.PerspectiveCamera(53,innerWidth/innerHeight,.1,500),renderer=new THREE.WebGLRenderer({antialias:true});renderer.setSize(innerWidth,innerHeight);renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.5;document.body.appendChild(renderer.domElement);
+scene.add(new THREE.HemisphereLight(0x99b2da,0x242033,1.65));const sun=new THREE.DirectionalLight(0xffba75,2.7);sun.position.set(25,50,30);scene.add(sun);const rim=new THREE.DirectionalLight(0x4c87ef,.85);rim.position.set(-30,28,-22);scene.add(rim);
 const mat=(color,emissive=0)=>new THREE.MeshStandardMaterial({color,roughness:.75,metalness:.18,emissive});
 const ground=new THREE.Mesh(new THREE.PlaneGeometry(240,240),mat(0x172a32));ground.rotation.x=-Math.PI/2;ground.position.y=-.06;scene.add(ground);
 const city=new THREE.Group();scene.add(city);const enemies=[],shots=[],keys=new Set();let walls=[],player,body,vehicle=false,life=100,kills=0,world=null,loaded=false,shootCD=0,enemySpawn=0,aim=new THREE.Vector3(1,0,0);const clock=new THREE.Clock();let travelHeading=0,walkPhase=0,legs=[],thrusters=[];
 function meshBox(w,h,d,m,x,y,z,parent=city){const o=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),m);o.position.set(x,y,z);parent.add(o);return o}
+// Arte original procedimental: texturas y siluetas industriales estilo consola retro.
+function texture(seed,kind=0){const c=document.createElement('canvas');c.width=256;c.height=512;const g=c.getContext('2d'),r=rng(seed);g.fillStyle=['#42434c','#384351','#51443f','#384b49'][kind%4];g.fillRect(0,0,256,512);
+for(let i=0;i<1100;i++){const v=Math.floor(20+r()*65);g.fillStyle=`rgba(${v+35},${v+29},${v+26},${.018+r()*.08})`;g.fillRect(r()*256,r()*512,2+r()*13,1+r()*9)}
+for(let y=17;y<510;y+=53){g.fillStyle='#282d35';g.fillRect(0,y+36,256,4);for(let x=20;x<256;x+=55){g.fillStyle='#1c242f';g.fillRect(x-4,y-4,34,35);g.fillStyle=r()>.38?'#e9ac60':'#6c8b9b';g.fillRect(x,y,26,27);g.fillStyle='rgba(255,218,149,.38)';g.fillRect(x+2,y+2,4,20);g.fillStyle='rgba(19,30,43,.45)';g.fillRect(x+12,y,3,27);g.fillStyle='#2c313b';g.fillRect(x-5,y+29,37,5)}}
+for(let x of [4,247]){g.fillStyle='#77747c';g.fillRect(x,0,5,512);g.fillStyle='#1e2832';for(let y=15;y<512;y+=28)g.fillRect(x-2,y,9,5)}
+const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;t.anisotropy=4;return new THREE.MeshStandardMaterial({map:t,roughness:.95,metalness:.04})}
+const facades=[0,1,2,3].map(i=>texture(821+i*37,i));
+function labelTex(word,bg='#193d50',fg='#ffd17d'){const c=document.createElement('canvas');c.width=512;c.height=128;const g=c.getContext('2d');g.fillStyle=bg;g.fillRect(0,0,512,128);g.strokeStyle='#e6b56a';g.lineWidth=9;g.strokeRect(7,7,498,114);g.font='bold 66px monospace';g.textAlign='center';g.textBaseline='middle';g.fillStyle=fg;g.fillText(word,256,67);const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;return new THREE.MeshBasicMaterial({map:t,side:THREE.DoubleSide})}
+const signs=['SECTOR 07','BTC PATROL','DOCK 19','NEXUS','BITMAP','POLICE'].map((v,i)=>labelTex(v,['#223948','#3c262d','#354132'][i%3]));
+function billboard(x,y,z,material,parent=city){const m=new THREE.Mesh(new THREE.PlaneGeometry(3.5,.88),material);m.position.set(x,y,z);parent.add(m);return m}
+function cyl(rt,rb,h,m,x,y,z,parent=city,n=7){const o=new THREE.Mesh(new THREE.CylinderGeometry(rt,rb,h,n),m);o.position.set(x,y,z);parent.add(o);return o}
+const concrete=mat(0x69666c),metal=mat(0x293644),warm=mat(0xffc27a,0x9a4a1b),policeBlue=mat(0x244f8b),whiteArmor=mat(0xbac7cf),brass=mat(0xb97d48),blackSteel=mat(0x171d29),plant=mat(0x293e37),flare=mat(0xff7738,0xb94215);
 function fnv(s){let h=2166136261;for(let i=0;i<s.length;i++){h^=s.charCodeAt(i);h=Math.imul(h,16777619)}return h>>>0}function rng(seed){let x=seed>>>0;return ()=>{x+=0x6D2B79F5;let t=x;t=Math.imul(t^t>>>15,t|1);t^=t+Math.imul(t^t>>>7,t|61);return ((t^t>>>14)>>>0)/4294967296}}
 function hexBytes(hex){return (hex.match(/.{1,2}/g)||[]).map(x=>parseInt(x,16))}function safeInt(v){return Number.isInteger(v)&&v>=0&&v<=10000000}
 const PROVIDERS=['https://mempool.space/api','https://blockstream.info/api'];
@@ -16,18 +28,26 @@ async function request(base,path,asText=false){const ctl=new AbortController();c
 const adapters={publicApi:{async fetchBlock(height){let errors=[];for(const base of PROVIDERS){try{const hash=await request(base,'/block-height/'+height,true);if(!/^[a-f0-9]{64}$/i.test(hash))throw Error('Hash inválido');const info=await request(base,'/block/'+hash);if(!Number.isInteger(info.tx_count)||info.tx_count<1||info.tx_count>20000)throw Error('Cantidad TX fuera del límite');const txids=await request(base,'/block/'+hash+'/txids');if(!Array.isArray(txids)||txids.length!==info.tx_count||new Set(txids).size!==txids.length||txids.some(x=>!/^[a-f0-9]{64}$/i.test(x)))throw Error('Lista de TXID incompleta o inválida');return {height,hash,txids,source:base.includes('mempool')?'Mempool.space Esplora':'Blockstream Esplora',complete:true}}catch(e){errors.push(base+': '+e.message)}}throw Error(errors.join(' | '))}},gateway:{async fetchBlock(){throw Error('Gateway todavía no configurado')}}};let adapter=adapters.publicApi;
 function derive(data){if(!data.complete||!data.txids.length)throw Error('Datos Bitcoin incompletos');const plots=[];const N=15,cell=8;const occupied=new Set();for(let i=0;i<data.txids.length;i++){const txid=data.txids[i];if(!/^[a-f0-9]{64}$/i.test(txid))throw Error('TXID inválido');const bytes=hexBytes(txid),index=(bytes[0]*256+bytes[1])%(N*N),x=index%N,z=Math.floor(index/N),key=x+','+z;if(x%3===1||z%3===1||occupied.has(key))continue;occupied.add(key);const height=3+(bytes[2]%8)*1.05;plots.push({x:(x-7)*cell,z:(z-7)*cell,h:height,w:3.8+(bytes[3]%4)*.48,d:3.8+(bytes[4]%4)*.48,tone:bytes[5]%4,txid});}
 return {plots,seed:fnv(data.hash),count:data.txids.length,hash:data.hash,height:data.height,source:data.source};}
-const palette=[mat(0x41465d),mat(0x343b51),mat(0x45516a),mat(0x514359)],road=mat(0x263842),lane=mat(0xbcae75),cyan=mat(0x2fd9f0,0x0b6478),red=mat(0xff3d50,0x64101a),gold=mat(0xffd76a,0x68561c);
+const palette=[mat(0x41465d),mat(0x343b51),mat(0x45516a),mat(0x514359)],road=mat(0x2b2c35),lane=mat(0xbcae75),cyan=mat(0x2fd9f0,0x0b6478),red=mat(0xff3d50,0x64101a),gold=mat(0xffd76a,0x68561c);
 function resetCity(){if(player){scene.remove(player);player=null;}for(const e of enemies)scene.remove(e.o);for(const s of shots){scene.remove(s.o);s.o.geometry.dispose();}while(city.children.length){const o=city.children[0];city.remove(o);o.traverse(v=>{if(v.geometry)v.geometry.dispose()})}enemies.length=0;shots.length=0;walls=[];}
-function build(data){resetCity();world=derive(data);const random=rng(world.seed);const asphalt=mat(0x202936),pavement=mat(0x485263),windowMat=mat(0xffb968,0x5a2c0c),neon=mat(0x36c4ed,0x06465b);
+function build(data){resetCity();world=derive(data);const random=rng(world.seed);const asphalt=mat(0x282a31),pavement=mat(0x62636a),windowMat=mat(0xe0b16f,0x5a2c0c),neon=mat(0x267c9a,0x053345);
 meshBox(124,.12,124,asphalt,0,-.12,0);
+// Intersecciones con pasos de peatones y marcas viales.
+for(let xx=-48;xx<=48;xx+=24)for(let zz=-48;zz<=48;zz+=24){for(let q=-3;q<=3;q++){meshBox(.43,.018,2.5,concrete,xx+q*.85,.12,zz+5.3);meshBox(2.5,.018,.43,concrete,xx+5.3,.12,zz+q*.85)}}
 // Edge glow and lane guides use a fixed grid; TXIDs control building placement.
-const sidewalk=mat(0x59616d),curb=mat(0x81899a),mark=mat(0xe8b96b),sign=mat(0x29e1eb,0x0b8791);
+const sidewalk=mat(0x55535a),curb=mat(0x8e8582),mark=mat(0xe0bb78),sign=mat(0x2b7c94,0x0b3545);
 for(let k=-6;k<=6;k+=3){const q=k*8;for(let t=-7;t<=7;t++){const c=t*8;if(t%3===1)continue;meshBox(1.2,.025,.14,mark,c,.082,q);meshBox(.14,.025,1.2,mark,q,.083,c)}}
 // Avenidas continuas: ningún edificio invade las vías. Cruces cada 24 unidades.
 for(let k=-6;k<=6;k+=3){const pos=k*8;meshBox(124,.08,8.4,road,0,.01,pos);meshBox(8.4,.08,124,road,pos,.012,0);
 for(let m=-7;m<=7;m++){if(m%3===0)continue;meshBox(1.1,.025,.13,lane,m*8,.07,pos);meshBox(.13,.025,1.1,lane,pos,.075,m*8)}}
-for(const p of world.plots){meshBox(p.w+1.35,.32,p.d+1.35,sidewalk,p.x,.11,p.z);meshBox(p.w,p.h,p.d,palette[p.tone],p.x,p.h/2+.2,p.z);// Layered roofs, parapets, antennae and low-poly neon architecture.
-meshBox(p.w+.12,.22,p.d+.12,dark,p.x,p.h+.3,p.z);
+for(const p of world.plots){meshBox(p.w+1.35,.32,p.d+1.35,sidewalk,p.x,.11,p.z);meshBox(p.w,p.h,p.d,facades[p.tone],p.x,p.h/2+.2,p.z);
+// Volúmenes arquitectónicos, comercios y marquesinas.
+if(p.h>6){meshBox(p.w+.5,.32,1.2,metal,p.x,2.55,p.z-p.d/2-.55);for(const a of [-1,1])meshBox(.12,2.1,.12,concrete,p.x+a*(p.w/2+.15),1.2,p.z-p.d/2-.55)}
+if(p.h>8){const m=signs[(Math.floor(p.x*7+p.z*13)+10000)%signs.length];billboard(p.x,Math.min(p.h-1,5.3),p.z-p.d/2-.14,m)}
+if(p.h>9&&random()>.52){meshBox(1.1,.1,1.1,metal,p.x+1,p.h+1.05,p.z+1);cyl(.045,.045,2.4,concrete,p.x+1,p.h+2.3,p.z+1)}
+// Columnas y escaparates de la planta baja.
+for(const side of [-1,1]){meshBox(.2,2.4,.24,concrete,p.x+side*(p.w/2-.25),1.35,p.z-p.d/2-.17);meshBox(.75,1.3,.12,mat(0x1c3947,0x0b1924),p.x+side*.95,1.05,p.z-p.d/2-.15)}// Layered roofs, parapets, antennae and low-poly neon architecture.
+meshBox(p.w+.12,.22,p.d+.12,concrete,p.x,p.h+.3,p.z);
 meshBox(p.w+.32,.14,.14,neon,p.x,p.h+.47,p.z-p.d/2);
 meshBox(p.w+.32,.14,.14,neon,p.x,p.h+.47,p.z+p.d/2);
 meshBox(.14,.14,p.d+.32,neon,p.x-p.w/2,p.h+.47,p.z);
@@ -43,14 +63,18 @@ for(const side of [-1,1]){meshBox(.15,p.h,.15,dark,p.x+side*(p.w/2-.1),p.h/2+.22
 if(p.h>6){meshBox(1.15,.65,1.15,dark,p.x,p.h+.78,p.z);meshBox(.65,.15,.65,sign,p.x,p.h+1.15,p.z)}walls.push({x:p.x,z:p.z,r:Math.max(p.w,p.d)/2+.55});
 for(let f=0;f<4;f++){const levels=Math.min(6,Math.floor(p.h/1.7));for(let j=0;j<levels;j++){const yy=1.4+j*1.6;const off=(f%2===0?1:-1);const q=meshBox(f<2?0.07:.85,.54,f<2?.85:.07,windowMat,p.x+(f<2?off*(p.w/2+.04):0),yy,p.z+(f>=2?off*(p.d/2+.04):0));}}}
 // Retro urban furniture: sodium streetlights and hazard-striped barricades.
-const pole=mat(0x536073),lamp=mat(0xffd184,0x995222),hazard=mat(0xff9e45,0x783910);
+const pole=mat(0x4c4e57),lamp=mat(0xffd184,0x995222),hazard=mat(0xff9e45,0x783910);
 for(let a=-5;a<=5;a+=3){for(let b=-5;b<=5;b+=3){const xx=a*8+7,zz=b*8+7;
 meshBox(.18,4.6,.18,pole,xx,2.3,zz);meshBox(1.8,.16,.38,pole,xx+.8,4.6,zz);meshBox(.9,.12,.38,lamp,xx+1.15,4.47,zz);
 if((a+b)%3===0){meshBox(2.2,.7,.4,hazard,xx-2,.42,zz+2);meshBox(.3,.72,.46,dark,xx-2,.44,zz+2);}}}
 for(let i=-6;i<=6;i+=3)for(let j=-6;j<=6;j+=3){if(random()>.38)continue;const x=i*8+3,z=j*8+3;meshBox(.25,3,.25,mat(0x7b8690),x,1.5,z);meshBox(1,.25,.5,gold,x,3,z)}
+// Decoración industrial: vehículos estacionados, depósitos, árboles y barricadas.
+for(let i=0;i<35;i++){const x=Math.round((random()*112-56)/8)*8+3.6,z=Math.round((random()*112-56)/8)*8+3.6;if(blocked(x,z,1.6))continue;const variant=Math.floor(random()*3);if(variant===0){meshBox(2.5,.8,4,policeBlue,x,.55,z);meshBox(1.9,.65,1.8,blackSteel,x,1.2,z-.25);for(const a of [-1,1]){cyl(.45,.45,.25,blackSteel,x+a*1.28,.4,z-1.1,city,9);cyl(.45,.45,.25,blackSteel,x+a*1.28,.4,z+1.1,city,9)}meshBox(.9,.18,.24,warm,x,1.65,z-.4)}else if(variant===1){for(let j=0;j<3;j++){meshBox(1.2,.95,1.2,j%2?brass:metal,x+j*.3,.52+j*.86,z+j*.18)}}else{cyl(.22,.32,2.4,concrete,x,1.2,z);cyl(1.3,.65,2.7,plant,x,3,z,city,6)}}
+// Borde escénico de distrito industrial, fuera de las calles jugables.
+for(let i=-7;i<=7;i+=2){const x=i*8;meshBox(6,2.2,2.2,metal,x,1.1,-64);meshBox(6,2.2,2.2,metal,x,1.1,64);if(i%4===1){cyl(1.1,1.5,9,metal,x,4.5,-68);cyl(1.1,1.5,9,metal,x,4.5,68)}}
 player=new THREE.Group();scene.add(player);body=new THREE.Group();player.add(body);vehicle=false;makeRobot();player.position.set(0,0,0);travelHeading=0;walkPhase=0;life=100;kills=0;loaded=true;enemySpawn=0;for(let i=0;i<9;i++)spawnEnemy(random);updateHUD();$('banner').textContent='CIUDAD '+world.height+' · '+world.count+' TX · Calles transitables · '+world.source;}
 // Retro-futuristic original mech: -Z is forward; movement rotates the whole chassis.
-const armor=mat(0x2f91b1),edge=mat(0xb8d9de),dark=mat(0x1a293f),glass=mat(0x182f4d,0x07152b),amber=mat(0xffbc5a,0x754018),thruster=mat(0x62eaff,0x1a8cae);
+const armor=mat(0x275b9a),edge=mat(0xcbd4d9),dark=mat(0x172538),glass=mat(0x18314d,0x07152b),amber=mat(0xffbc5a,0x754018),thruster=mat(0x62baff,0x13578a);
 function makeRobot(){while(body.children.length){const c=body.children[0];body.remove(c);c.traverse(v=>v.geometry?.dispose())}legs=[];thrusters=[];
 if(!vehicle){
 // Original chunky PS1-inspired biped, oriented towards local -Z.
@@ -59,12 +83,16 @@ meshBox(2.5,.35,1.85,edge,0,3.38,0,body);
 meshBox(1.38,.84,1.18,dark,0,3.88,-.16,body);
 meshBox(1.16,.28,.16,thruster,0,3.97,-.78,body);
 meshBox(1.3,.3,.2,amber,0,2.75,-.89,body);
+meshBox(1.6,.75,.18,whiteArmor,0,3.0,-.89,body);meshBox(.48,.24,.23,policeBlue,0,3.06,-1.01,body);
+for(const a of [-1,1]){meshBox(.26,.65,.3,brass,a*.89,2.8,-.98,body);meshBox(.25,.55,.3,blackSteel,a*.52,4.37,.13,body)}
 meshBox(1.65,.45,1.45,dark,0,1.72,.1,body);
 for(const side of [-1,1]){
  meshBox(.92,.85,1.48,edge,side*1.49,3.1,0,body);
  meshBox(.76,1.32,.83,armor,side*1.51,2.22,-.1,body);
  meshBox(.5,.52,1.95,dark,side*1.51,1.75,-.88,body);
  meshBox(.29,.27,.35,amber,side*1.5,1.73,-1.9,body);
+meshBox(.38,.35,1.7,blackSteel,side*1.51,1.55,-1.1,body);
+meshBox(.6,.2,.8,whiteArmor,side*1.49,3.52,.12,body);
  const leg=new THREE.Group();leg.position.set(side*.71,1.48,.12);body.add(leg);legs.push(leg);
  meshBox(.88,1.45,.92,armor,0,-.62,0,leg);
  meshBox(.96,.45,1.35,edge,0,-1.24,-.32,leg);
@@ -78,6 +106,8 @@ meshBox(2.35,.7,2.1,glass,0,1.67,-.46,body);
 meshBox(3.95,.28,1.45,edge,0,.95,1.36,body);
 meshBox(3.95,.28,1.45,edge,0,.95,-1.48,body);
 meshBox(2.1,.22,.24,amber,0,1.23,-2.37,body);
+meshBox(2.8,.18,.7,whiteArmor,0,1.45,-2.0,body);meshBox(.45,.16,.5,red,0,1.57,-2.15,body);
+meshBox(2.8,.18,.4,blackSteel,0,1.03,2.1,body);
 meshBox(1.3,.16,.25,thruster,0,1.6,-1.65,body);
 for(const side of [-1,1]){meshBox(.7,.62,1.12,dark,side*1.48,.8,1.8,body);const t=meshBox(.46,.4,.17,thruster,side*1.48,.77,2.41,body);thrusters.push(t);meshBox(.42,.18,1.7,edge,side*1.85,1.2,-.8,body);}
 }}
